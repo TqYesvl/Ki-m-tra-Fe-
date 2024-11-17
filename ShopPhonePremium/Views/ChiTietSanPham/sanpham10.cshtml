@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Realme C53";
+    Layout = "~/Views/Shared/LayoutLogin.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Chi tiết sản phẩm</title>
+    <link href="~/Content/MyCSS/stylesanpham.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="div-head">
+        <h3>
+            <a href="@Url.Action("TrangChu", "Home")">Trang Chủ</a>
+        </h3>
+    </div>
+    <h3 class="name-sanpham">Realme C53 </h3>
+    <div class="div-sanpham">
+        <img class="img-sanpham" src="~/Content/image/realmec53.png" />
+        <div class="info-sanpham">
+            <h3>Đặc Điểm Nổi Bật Của Realme C53</h3>
+            <ul class="ul-info-sanpham">
+                <li>Với thiết kế tinh tế và hiệu năng mạnh mẽ, chiếc điện thoại này sẽ là lựa chọn tốt nhất.</li>
+                <li>Lưu trữ thoải mái mọi ứng dụng, hình ảnh và video.</li>
+                <li>Camera mới, tối ưu trải nghiệm quay chụp.</li>
+                <li>Thiết kế sang trọng, đẳng cấp, khẳng định phong cách thời thượng.</li>
+            </ul>
+            <div class="div-muahang">
+                <h4 class="h4-giahang">Giá: 8.000.000 VND</h4>
+                <a href="@Url.Action("GioHang", "GioHang")"><button class="btn-buying">MUA NGAY</button></a>
+                <a href="@Url.Action("GioHang", "GioHang")"><button class="btn-addbuying">Thêm vào giỏ hàng</button></a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
+
+

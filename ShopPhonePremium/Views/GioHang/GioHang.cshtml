@@ -1,0 +1,55 @@
+﻿@{
+    Layout = "~/Views/Shared/MasterLayout.cshtml";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Giỏ Hàng</title>
+    <link href="~/Content/MyCSS/styleGioHang.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="div-giohang-head">
+        <form>
+            <table class="table-giohang">
+                <tr>
+                    <td>Ảnh sản phẩm</td>
+                    <td>Tên sản phẩm</td>
+                    <td>Số lượng</td>
+                    <td>Giá sản phẩm</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="img-sanpham" src="~/Content/image/samsung.png" />
+                    </td>
+                    <td>Samsung Galaxy S24 Ultra</td>
+                    <td>
+                        <button class="btn-left">-</button>
+                        <input class="input-sl" type="number" name="soluong" value="1" min="1" />
+                        <button class="btn-right"> +</button>
+                    </td>
+                    <td><span class="gia-tien">30000000</span></td>
+                </tr>                
+            </table>
+        </form>
+    </div>
+    <div class="kq-thanhtoan">
+        <p>Tổng giá: &nbsp;<span class="tong-tien">30000000</span></p>
+    </div></br>
+    <div class="thanhtoan">
+        <button class="buy-muahang">Thanh toán</button>
+    </div>
+    <div class="div-thanhtoan">
+            <h3 class="thanhtoan-head">Vui lòng chọn phương thức thanh toán</h3>
+            <selection class="menu-thanhtoan">
+                <input class="tick" type="checkbox" /> <label>Vietcombank</label><br />
+                <input class="tick" type="checkbox" /> <label>MOMO</label><br />
+                <input class="tick" type="checkbox" /> <label>Tiền mặt</label><br />
+            </selection>
+    </div>
+    <script src="~/Scripts/MyScript/script2.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,146 @@
+﻿* {
+    box-shadow: border-box;
+    font-family: Sans-Serif,Arial;
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+.div-head {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-left:30px;
+    background-color: #dedede;
+    height: 50px;
+}
+.img-arrow {
+    width:25px;
+    height:25px;
+}
+.div-head h3 {
+    font-size: 20px;
+}
+.div-login {
+    margin-top: 30px;
+    margin-left: 140px;
+    margin-right: 140px;
+    background-color:white;
+}
+    .div-login form .password-login {
+        background-color: white;
+    }
+    .form-login {
+        float: left;
+    }
+
+    .form-login h3 {
+        margin-bottom: 20px;
+    }
+
+    .form-login input {
+        margin-top: 15px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+.password-login {
+    margin-left: 280px;
+    width: auto;
+    height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+    .password-login a {
+        color: black;
+    }
+
+        .password-login a:hover {
+            color: red;
+        }
+
+.btn-login {
+    margin-top: 30px;
+    width: 230px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #383838;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-loginfb, .btn-logingg {
+    margin-top: 30px;
+    width: 230px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+}
+
+.img-login {
+    float: left;
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.btn-loginfb:hover {
+    color: red;
+}
+
+.btn-logingg:hover {
+    color: red;
+}
+
+#name-email, #name-password, #name-number2, #name-email2 {
+    width: 400px;
+}
+
+#name-password1, #name-password2 {
+    width: 400px;
+}
+
+.check-password, .check-password1 {
+    width: 30px;
+    height: 15px;
+}
+
+.form-register {
+    float: right;
+}
+
+    .form-register h3 {
+        margin-bottom: 20px;
+    }
+
+    .form-register input {
+        margin-top: 15px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+.btn-register {
+    margin-top: 15px;
+    width: 230px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #383838;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}

@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Premium Smartphone Store</title>
+    <link href="~/Content/MyCSS/style1.css" rel="stylesheet" />
+    <link rel="icon" href="https://cdn3.iconfinder.com/data/icons/3d-social-media-pack/256/Snapchat.png" type="image/x-icon"/>
+</head>
+<body>
+    <header id="heading">
+        <div class="header-top">
+            <div class="header-top-heading">
+                <a href="@Url.Action("TrangChu", "Home")">
+                    <img class="img-logo" src="https://cdn3.iconfinder.com/data/icons/3d-social-media-pack/256/Snapchat.png" />
+                </a>
+                <form class="header-seacrh" action="/timkiem">
+                    <input id="search" type="search" name="search" placeholder="Bạn tìm gì ? " />
+                    <img class="img-search" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-search-64.png" />
+                </form>
+                <button class="btn-search">Tìm kiếm</button>
+                <div class="header-top-list">
+                    <a href="@Url.Action("Login","Home")">
+                        <img class="img-list-right" src="https://cdn2.iconfinder.com/data/icons/app-user-interface-6/48/User-64.png" />
+                        <span>Đăng nhập</span>
+                    </a>
+                    <a href="@Url.Action("GioHang","GioHang")">
+                        <img class="img-list-right" src="https://cdn4.iconfinder.com/data/icons/basic-ui-2-line/32/shopping-cart-shop-drop-trolly-64.png" />
+                        <span>Giỏ Hàng</span>
+                    </a>
+                    <img class="img-map" src="https://cdn4.iconfinder.com/data/icons/multimedia-75/512/multimedia-09-64.png" />
+                    <input class="map-giaohang" type="text" placeholder="Địa chỉ giao hàng">
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div>
+                <ul class="main-menu">
+                    <li>
+                    <a href="@Url.Action("samsung", "SanPham")">
+                        Samsung
+                    </a>
+                    </li>
+                    <li> 
+                    <a href="@Url.Action("iphone", "SanPham")">
+                        Iphone
+                    </a>
+                    </li>
+                    <li><a href="@Url.Action("xiaomi", "SanPham")">
+                        Xiaomi
+                        </a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("oppo", "SanPham")">
+                            Oppo
+                        </a>
+                    </li>
+                    <li><a href="@Url.Action("realme", "SanPham")">
+                        Realme
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        @RenderBody()
+    </div>
+
+    <footer>
+        <div class="div-footer">
+            <ul>
+                <li>
+                    <p><b> Tổng đài hổ trợ</b></p></br>
+                    <p>Gọi mua:<span class="info-footer"> 11111111</span></p></br>
+                    <p>Khiếu nại:<span class="info-footer"> 2222222</span></p></br>
+                    <p>Bảo hành:<span class="info-footer"> 3333333</span></p>
+                </li>
+                <li>
+                    <p><b> Về công ty</b></p></br>
+                    <p><span class="info-congty">Giới thiệu công ty</span></p></br>
+                    <p><span class="info-congty">Tuyển dụng</span></p></br>
+                    <p><span class="info-congty">Góp ý kiến</span></p>
+                </li>
+                <li>
+                    <p><b> Thông tin khác</b></p></br>
+                    <p><span class="info-congty">Tích điểm đổi quà</span></p></br>
+                    <p><span class="info-congty">Tìm hiểu trả góp</span></p></br>
+                    <p><span class="info-congty">Chính sách bảo hành</span></p>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

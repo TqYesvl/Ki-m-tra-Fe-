@@ -1,0 +1,194 @@
+﻿@{
+    Layout = "~/Views/Shared/MasterLayout.cshtml";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Shop Phone</title>
+    <link href="~/Content/MyCSS/StyleTrangChu.css" rel="stylesheet" />
+</head>
+<body>
+    <!--Banner-->
+    <div class="banner">
+        <img class="img-banner" src="~/Content/image/banner1.png" />
+    </div>
+    <!--show sản phẩm-->
+    <main>
+        <!--Sản phẩm nổi bật-->
+        <div class="header-items"><h2> Sản phẩm nổi bật</h2></div>
+        <div class="items-shop">
+            <!--Samsung-->
+            <a href="@Url.Action("sanpham1", "ChiTietSanPham")">
+                <div class="items">
+                    <img class="img-items" src="~/Content/image/samsung.png" />
+                    <p class"name-items"><b>Samsung Galaxy S24 Ultra</b></p>
+                    <a href="@Url.Action("sanpham1", "ChiTietSanPham")">
+                        <button class="buy-item">Mua ngay</button>
+                    </a>
+                </div>
+            </a>
+            <!--Sámussung Folde 6-->
+            <a href="@Url.Action("sanpham6", "ChiTietSanPham")">
+                <div class="items">
+                    <img class="img-items" src="~/Content/image/samsungf6.png" />
+                    <p class"name-items"><b>Samsung Galaxy Z Fold 6</b></p>
+                    <a href="@Url.Action("sanpham6", "ChiTietSanPham")">
+                        <button class="buy-item">Mua ngay</button>
+                    </a>
+                </div>
+            </a>
+            <!--Iphone-->
+            <a href="@Url.Action("sanpham2", "ChiTietSanPham")">
+                <div class="items">
+                    <img class="img-items" src="~/Content/image/iphone.png" />
+                    <p class"name-items"><b>Iphone 16 Pro 128GB</b></p>
+                    <a href="@Url.Action("sanpham2", "ChiTietSanPham")">
+                        <button class="buy-item">Mua ngay</button>
+                    </a>
+                </div>
+            </a>
+            <!--Xiaomi-->
+            <a href="@Url.Action("sanpham3", "ChiTietSanPham")">
+                <div class="items">
+                    <img class="img-items" src="~/Content/image/xiaomi.png" />
+                    <p class"name-items"><b>Xiaomi 14T</b></p>
+                    <a href="@Url.Action("sanpham3", "ChiTietSanPham")"><button class="buy-item">Mua ngay</button></a>
+                </div>
+            </a>
+            <!--Opppo-->
+            <a href="@Url.Action("sanpham4", "ChiTietSanPham")">
+                <div class="items">
+                    <img class="img-items" src="~/Content/image/oppo.png" />
+                    <p class"name-items"><b>Oppo Reno12</b></p>
+                    <a href="@Url.Action("sanpham4", "ChiTietSanPham")">
+                        <button class="buy-item">Mua ngay</button>
+                    </a>
+                </div>
+            </a>
+            <!--Realme-->
+            <a href="@Url.Action("sanpham5", "ChiTietSanPham")">
+                <div class="items">
+                    <img class="img-items" src="~/Content/image/realme.png" />
+                    <p class"name-items"><b>Reame C67</b></p>
+                    <a href="@Url.Action("sanpham5", "ChiTietSanPham")"><button class="buy-item">Mua ngay</button></a>
+                </div>
+            </a>
+        </div>
+        <!--Samsung-->
+        <div class="header-items"><h2> Samsung</h2></div>
+        <div class="items-shop">
+            <!--Samsung-->
+            <a href="@Url.Action("sanpham1", "ChiTietSanPham")">
+                <div class="items">
+                    <img class="img-items" src="~/Content/image/samsung.png" />
+                    <p class"name-items"><b>Samsung Galaxy S24 Ultra</b></p>
+                    <a href="@Url.Action("sanpham1", "ChiTietSanPham")">
+                        <button class="buy-item">Mua ngay</button>
+                    </a>
+                </div>
+            </a>
+            <!--Sámussung Folde 6-->
+            <a href="@Url.Action("sanpham6", "ChiTietSanPham")">
+                <div class="items">
+                    <img class="img-items" src="~/Content/image/samsungf6.png" />
+                    <p class"name-items"><b>Samsung Galaxy Z Fold 6</b></p>
+                    <a href="@Url.Action("sanpham6", "ChiTietSanPham")">
+                        <button class="buy-item">Mua ngay</button>
+                    </a>
+                </div>
+            </a>
+        </div>
+        <!--Iphone-->
+        <div class="header-items"><h2>Iphone</h2></div>
+        <div class="items-shop">
+            <!--Iphone 16-->
+            <a href="@Url.Action("sanpham2", "ChiTietSanPham")">
+                <div class="items">
+                    <img class="img-items" src="~/Content/image/iphone.png" />
+                    <p class"name-items"><b>Iphone 16 Pro 128GB</b></p>
+                    <a href="@Url.Action("sanpham2", "ChiTietSanPham")">
+                        <button class="buy-item">Mua ngay</button>
+                    </a>
+                </div>
+            </a>
+            <!--Iphone 15-->
+            <a href="@Url.Action("sanpham7", "ChiTietSanPham")">
+                <div class="items">
+                    <img class="img-items" src="~/Content/image/iphone15.png" />
+                    <p class"name-items"><b>Iphone 15 Pro 128GB</b></p>
+                    <a href="@Url.Action("sanpham7", "ChiTietSanPham")">
+                        <button class="buy-item">Mua ngay</button>
+                    </a>
+                </div>
+            </a>
+        </div>
+        <!--Xiaomi-->
+        <div class="header-items"><h2>Xiaomi</h2></div>
+        <div class="items-shop">
+            <!--Xiaomi 14T-->
+            <a href="@Url.Action("sanpham3","ChiTietSanPham")">
+                <div class="items">
+                    <img class="img-items" src="~/Content/image/xiaomi.png" />
+                    <p class"name-items"><b>Xiaomi 14T</b></p>
+                    <a href="@Url.Action("sanpham3","ChiTietSanPham")"><button class="buy-item">Mua ngay</button></a>
+                </div>
+            </a>
+            <!--Xiaomi POCO X6-->
+            <a href="@Url.Action("sanpham8","ChiTietSanPham")">
+                <div class="items">
+                    <img class="img-items" src="~/Content/image/xiaomipocox6.png" />
+                    <p class"name-items"><b>Xiaomi POCO X6</b></p>
+                    <a href="@Url.Action("sanpham8","ChiTietSanPham")"><button class="buy-item">Mua ngay</button></a>
+                </div>
+            </a>
+        </div>
+        <!--Opppo-->
+        <div class="header-items"><h2>Oppo</h2></div>
+        <div class="items-shop">
+            <!--OPPPO Reno12-->
+            <a href="@Url.Action("sanpham4", "ChiTietSanPham")">
+                <div class="items">
+                    <img class="img-items" src="~/Content/image/oppo.png" />
+                    <p class"name-items"><b>Oppo Reno12</b></p>
+                    <a href="@Url.Action("sanpham4", "ChiTietSanPham")">
+                        <button class="buy-item">Mua ngay</button>
+                    </a>
+                </div>
+            </a>
+            <!--OPPPO A3-->
+            <a href="@Url.Action("sanpham9", "ChiTietSanPham")">
+                <div class="items">
+                    <img class="img-items" src="~/Content/image/oppoa3.png" />
+                    <p class"name-items"><b>Oppo A3</b></p>
+                    <a href="@Url.Action("sanpham9", "ChiTietSanPham")">
+                        <button class="buy-item">Mua ngay</button>
+                    </a>
+                </div>
+            </a>
+        </div>
+        <!--Realme-->
+        <div class="header-items"><h2>Realme</h2></div>
+        <div class="items-shop">
+            <!--OPPPO Realme C67-->
+            <a href="@Url.Action("sanpham5", "ChiTietSanPham")">
+                <div class="items">
+                    <img class="img-items" src="~/Content/image/realme.png" />
+                    <p class"name-items"><b>Reame C67</b></p>
+                    <a href="@Url.Action("sanpham5", "ChiTietSanPham")"><button class="buy-item">Mua ngay</button></a>
+                </div>
+            </a>
+            <!--OPPPO Realme C53-->
+            <a href="@Url.Action("sanpham10", "ChiTietSanPham")">
+                <div class="items">
+                    <img class="img-items" src="~/Content/image/realmec53.png" />
+                    <p class"name-items"><b>Reame C53</b></p>
+                    <a href="@Url.Action("sanpham10", "ChiTietSanPham")"><button class="buy-item">Mua ngay</button></a>
+                </div>
+            </a>
+</main>
+</body>
+</html>
+
+
+

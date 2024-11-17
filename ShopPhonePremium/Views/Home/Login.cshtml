@@ -1,0 +1,79 @@
+﻿@{
+    Layout = "~/Views/Shared/LayoutLogin.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="" utf-8" />
+    <title>Đăng nhập</title>
+    <link href="~/Content/MyCSS/style2.css" rel="stylesheet" />
+    
+
+</head>
+<body>
+
+    <div class="div-head">
+        <h3>
+            <a href="@Url.Action("TrangChu", "Home")">Trang Chủ</a>
+        </h3>
+        <img class="img-arrow" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-forward-64.png" />
+        <h3>
+            <a href="@Url.Action("Login", "Home")">Đăng nhập</a>
+        </h3>
+    </div>
+    <div class="div-login">
+        <form>
+            <div class="form-login">
+                <h3>Đăng nhập</h3>
+                <label>Nhập SĐT hoặc địa chỉ Email</label><br>
+                <input id="name-email" type="email" name="email" placeholder="Email hoặc tên đăng nhập" /><br>
+                <label>Mật khẩu</label><br>
+                <input id="name-password" type="password" name="password" placeholder="Nhập password" pattern="[A-Za-z]{6,}" maxlength="20" title="Vui lòng nhập nhập trên 6 kí tự. Và không có kí tự đặt biệt"/><br>
+                <input class="check-password" type="checkbox" />
+                <label>Hiển thị mật khẩu</label><br>
+                <button class="password-login"><a href="#">Quên mật khẩu ?</a></button>
+                <br>
+                <a href="#"><button class="btn-login">Đăng nhập</button></a>
+                <br>
+                <a href="https://www.facebook.com/">
+                    <button class="btn-loginfb">
+                        <img class="img-login" src="https://tse2.mm.bing.net/th?id=OIP.MHNWAEjX95uG3maQoGtZzAHaHa&pid=Api&P=0&h=220" />
+                        Đăng nhập bằng Facebook
+                    </button>
+                </a>
+
+                <br>
+                <a href="https://www.google.com/">
+                    <button class="btn-logingg">
+                        <img class="img-login" src="https://tse4.mm.bing.net/th?id=OIP.D6P-BO32wCApcPIIjt6p5wHaHa&pid=Api&P=0&h=220" />
+                        Đăng nhập bằng Google
+                    </button>
+                </a>
+            </div>
+        </form>
+        <form>
+            <div class="form-register">
+                <h3>Đăng ký</h3>
+                <label>Nhập SĐT</label><br>
+                <input id="name-number2" type="text" name="text" placeholder="Nhập SĐT" pattern="\d{10}" title="Vui lòng nhập SĐT." maxlength="10" /><br>
+                <label>Nhập địa chỉ Email</label><br>
+                <input id="name-email2" type="email" name="email" placeholder="Vui lòng nhập địa chỉ Email" /><br>
+                <label>Mật khẩu</label><br>
+                <input id="name-password1" type="password" name="password" placeholder="Nhập password" pattern="[A-Za-z]{6,}" maxlength="20" title="Vui lòng nhập nhập trên 6 kí tự. Và không có kí tự đặt biệt"/><br>
+                <label>Nhập lại mật khẩu</label><br> 
+                <input id="name-password2" type="password" name="password" placeholder="Nhập lại password" pattern="[A-Za-z]{6,}" maxlength="20" title="Vui lòng nhập nhập trên 6 kí tự. Và không có kí tự đặt biệt"/><br>
+                <input class="check-password1" type="checkbox" />
+                <label>Hiển thị mật khẩu</label><br>
+                <a href="#"><button class="btn-register">Tạo tài khoản</button></a>
+            </div>
+        </form>
+    </div>
+    <script src="/Scripts/MyScript/Script1.js"></script>
+</body>
+</html>
+
+
+
+
+
